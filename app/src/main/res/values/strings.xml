@@ -1,0 +1,110 @@
+<resources>
+    <string name="app_name">My Money App</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="daily_expense_fragment">Daily Expense Fragment</string>
+    <string name="weekly_expense_fragment">Weekly Expense Fragment</string>
+    <string name="monthly_expense_fragment">Monthly Expense Fragment</string>
+
+    <string name="tab_daily">Daily</string>
+    <string name="tab_weekly">Weekly</string>
+    <string name="tab_monthly">Monthly</string>
+    <string name="daily_expenses">Daily Expenses</string>
+    <string name="monthly_expenses">Monthly Expenses</string>
+    <string name="weekly_expenses">Weekly Expenses</string>
+
+    <string-array name="desc_expenses">
+        <item>Brunch with me</item>
+        <item>Bought Lunch</item>
+        <item>Bought a toy</item>
+        <item>Brunch with me</item>
+        <item>Bought Lunch</item>
+        <item>Bought a toy</item>
+        <item>Brunch with me</item>
+        <item>Bought Lunch</item>
+        <item>Bought a toy</item>
+        <item>Brunch with me</item>
+        <item>Bought Lunch</item>
+        <item>Bought a toy</item>
+    </string-array>
+
+    <string-array name="days">
+        <item>Thu</item>
+        <item>Fri</item>
+        <item>Sun</item>
+        <item>Thu</item>
+        <item>Fri</item>
+        <item>Sun</item>
+        <item>Thu</item>
+        <item>Fri</item>
+        <item>Sun</item>
+        <item>Thu</item>
+        <item>Fri</item>
+        <item>Sun</item>
+    </string-array>
+
+    <string-array name="dates">
+        <item>29</item>
+        <item>30</item>
+        <item>23</item>
+        <item>29</item>
+        <item>30</item>
+        <item>23</item>
+        <item>29</item>
+        <item>30</item>
+        <item>23</item>
+        <item>29</item>
+        <item>30</item>
+        <item>23</item>
+    </string-array>
+
+    <string-array name="income_titles">
+        <item>Salary</item>
+        <item>Side Hustle</item>
+    </string-array>
+
+    <string-array name="category_titles">
+        <item>Shopping</item>
+        <item>Photography</item>
+        <item>Cooking</item>
+        <item>Shopping</item>
+        <item>Photography</item>
+        <item>Cooking</item>
+        <item>Shopping</item>
+        <item>Photography</item>
+        <item>Cooking</item>
+    </string-array>
+
+    <string-array name="category_amounts">
+        <item>Ksh. 2000</item>
+        <item>Ksh. 3000</item>
+        <item>Ksh. 400</item>
+        <item>Ksh. 2000</item>
+        <item>Ksh. 3000</item>
+        <item>Ksh. 400</item>
+        <item>Ksh. 2000</item>
+        <item>Ksh. 3000</item>
+        <item>Ksh. 400</item>
+    </string-array>
+
+    <string-array name="spinner_label">
+        <item>Shopping</item>
+        <item>Books</item>
+    </string-array>
+
+    <string name="title_activity_landing">MainActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="help">Help</string>
+
+</resources>

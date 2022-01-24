@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "959216118706",
+    "project_id": "my-money-app-d39b6",
+    "storage_bucket": "my-money-app-d39b6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:959216118706:android:fce1fdb1a560539f3bd2ab",
+        "android_client_info": {
+          "package_name": "com.emmanuelmuturia.mymoneyapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "959216118706-m03laqt28esos9cv43bdgc74mmems78o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAvJHCPuWTzejyeAyh3wvRc544w1Assvoo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "959216118706-m03laqt28esos9cv43bdgc74mmems78o.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
