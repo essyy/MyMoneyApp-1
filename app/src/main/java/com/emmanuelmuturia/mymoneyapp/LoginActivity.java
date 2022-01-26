@@ -50,14 +50,13 @@ public class LoginActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Toast.makeText(LoginActivity.this, "PROCESSING...", Toast.LENGTH_LONG).show();
 
-                //get email and pwd
+                //We get email and password...
                 String email = loginEmail.getText().toString().trim();
                 String password = loginPass.getText().toString().trim();
 
                 if (!TextUtils.isEmpty(email) && !TextUtils.isEmpty(password)) {
-                    //Use Firebase auth instance you create and call the method signInWithEmailAndPassword method
-                    // passing the email and pwd you got from the views
-                    //Call the addOnCompleteListener() method to handle the Auth result
+                    //Use Firebase auth instance you create and call the method signInWithEmailAndPassword method passing the email and pwd you got from the views...
+                    //Call the addOnCompleteListener() method to handle the Auth result...
                     mAuth.signInWithEmailAndPassword(email, password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                         @Override
                         public void onComplete(@NonNull Task<AuthResult> task) {
@@ -78,8 +77,8 @@ public class LoginActivity extends AppCompatActivity {
         });
     }
 
-    //Check if user exists
-    /*public void checkUserExistence() {
+    //Function to check if user exists...
+    public void checkUserExistence() {
         //check user existence of user using the user_id in users db reference
         final String user_id = mAuth.getCurrentUser().getUid();
         //call the method addValueEventListener on the db reference of the user to determine
@@ -102,7 +101,7 @@ public class LoginActivity extends AppCompatActivity {
 
             }
         });
-    } */
+    }
 
     public void Register(View view) {
         Intent intent = new Intent(LoginActivity.this, RegisterActivity.class);
