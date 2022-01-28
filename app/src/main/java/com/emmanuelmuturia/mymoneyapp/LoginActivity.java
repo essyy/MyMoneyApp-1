@@ -79,16 +79,15 @@ public class LoginActivity extends AppCompatActivity {
 
     //Function to check if user exists...
     public void checkUserExistence() {
-        //check user existence of user using the user_id in users db reference
+        //check user existence of user using the user_id in users db reference...
         final String user_id = mAuth.getCurrentUser().getUid();
-        //call the method addValueEventListener on the db reference of the user to determine
-        // if the current userID supplied does exist in our db reference
+        //call the method addValueEventListener on the db reference of the user to determine if the current userID supplied does exist in our db reference...
         mDatabaseUsers.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
-                //get snapshot of the users db reference to determine if current user exists
+                //We get a snapshot of the users db reference to determine if current user exists...
                 if (snapshot.hasChild(user_id)) {
-                    //if users exists, direct to Main Activity
+                    //If the user exists, direct them to Main Activity...
                     Intent mainPage = new Intent(LoginActivity.this, SplashActivity.class);
                     startActivity(mainPage);
                 } else {
@@ -98,7 +97,7 @@ public class LoginActivity extends AppCompatActivity {
 
             @Override
             public void onCancelled(@NonNull DatabaseError error) {
-
+                Toast.makeText(LoginActivity.this, "Database Error!", Toast.LENGTH_SHORT).show();
             }
         });
     }

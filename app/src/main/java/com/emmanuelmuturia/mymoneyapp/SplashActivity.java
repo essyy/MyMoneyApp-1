@@ -47,7 +47,7 @@ public class SplashActivity extends AppCompatActivity {
                             FirebaseUser user = mAuth.getCurrentUser();
                         }else{
                             //Sign in unsuccessful
-                            Toast.makeText(SplashActivity.this,"Sign in unsuccessful",Toast.LENGTH_SHORT).show();
+                            Toast.makeText(SplashActivity.this,"Sign in Successful!",Toast.LENGTH_SHORT).show();
                             finish();
                         }
 
