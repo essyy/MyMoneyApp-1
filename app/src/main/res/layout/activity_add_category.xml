@@ -11,7 +11,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
-        android:background="@color/app_theme"
+        android:background="@color/theme"
         app:titleTextColor="@color/black"
         app:collapseIcon="@color/black"
         android:minHeight="?attr/actionBarSize"
@@ -66,14 +66,14 @@
 
             <Button
                 android:id="@+id/btn_add_category"
-                android:backgroundTint="@color/app_theme"
-                android:textColor="@color/black"
                 android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_below="@id/input_category"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="40dp"
-                android:layout_height="wrap_content"
-                android:text="Add Category"/>
+                android:backgroundTint="@color/theme"
+                android:text="Add Category"
+                android:textColor="@color/white" />
 
         </RelativeLayout>
 

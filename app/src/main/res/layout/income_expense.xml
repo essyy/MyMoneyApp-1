@@ -10,10 +10,10 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:background="@color/app_theme"
-        app:titleTextColor="@color/black"
+        app:titleTextColor="@color/white"
         android:minHeight="?attr/actionBarSize"
         android:theme="@style/ThemeOverlay.AppCompat.Dark"
-        app:collapseIcon="@color/black"
+        app:collapseIcon="@color/white"
         app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
 
     <androidx.cardview.widget.CardView

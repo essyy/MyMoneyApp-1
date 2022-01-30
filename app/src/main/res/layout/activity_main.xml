@@ -12,7 +12,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:background="@color/app_theme"
-        app:titleTextColor="@color/black"
+        app:titleTextColor="@color/white"
         app:title="Expenses"
         app:collapseIcon="@color/black"
         android:minHeight="?attr/actionBarSize"
@@ -35,21 +35,21 @@
         android:layout_width="match_parent"
         android:layout_height="48dp"
         android:layout_alignParentBottom="true"
-        app:itemIconTint="@color/black"
-        app:itemTextColor="@color/black"
-        app:menu="@menu/nav_bottom"
+        android:background="@color/app_theme"
         android:elevation="20dp"
-        android:background="@color/app_theme">
+        app:itemIconTint="@color/white"
+        app:itemTextColor="@color/white"
+        app:menu="@menu/nav_bottom">
 
     </com.google.android.material.bottomnavigation.BottomNavigationView>
 
-        <androidx.viewpager.widget.ViewPager
-            android:id="@+id/view_pager"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_above="@id/bottom_nav"
-            android:layout_below="@id/tab_layout"
-            android:layout_marginTop="10dp"/>
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/bottom_nav"
+        android:layout_below="@id/tab_layout"
+        android:layout_marginTop="10dp" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:layout_width="wrap_content"

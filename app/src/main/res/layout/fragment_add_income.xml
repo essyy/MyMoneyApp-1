@@ -22,10 +22,11 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/tool_bar"
-        android:layout_marginTop="40dp"
-        app:cardElevation="10dp"
+        android:layout_centerInParent="true"
         android:layout_marginHorizontal="10dp"
-        app:cardCornerRadius="10dp">
+        android:layout_marginTop="193dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="10dp">
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -36,20 +37,20 @@
                 android:id="@+id/add_income"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/centabel_book"
                 android:text="Add Income"
                 android:textColor="@color/black"
-                android:layout_centerHorizontal="true"
-                android:textSize="22dp"
-                android:fontFamily="@font/centabel_book"/>
+                android:textSize="22dp" />
 
             <TextView
                 android:id="@+id/income_ttl"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/add_income"
-                android:textColor="@color/black"
+                android:layout_marginTop="30dp"
                 android:text="Income Name:"
-                android:layout_marginTop="30dp"/>
+                android:textColor="@color/black" />
 
             <EditText
                 android:id="@+id/income_name"
@@ -93,13 +94,13 @@
             <Button
                 android:id="@+id/btn_add_income"
                 android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_below="@id/incomeAmount"
-                android:backgroundTint="@color/app_theme"
-                android:textColor="@color/black"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="40dp"
-                android:layout_height="wrap_content"
-                android:text="Add Income"/>
+                android:backgroundTint="@color/app_theme"
+                android:text="Add Income"
+                android:textColor="@color/white" />
 
         </RelativeLayout>
 

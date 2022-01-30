@@ -22,10 +22,11 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/tool_bar"
-        android:layout_marginTop="40dp"
-        app:cardElevation="10dp"
+        android:layout_centerInParent="true"
         android:layout_marginHorizontal="10dp"
-        app:cardCornerRadius="10dp">
+        android:layout_marginTop="141dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="10dp">
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -36,103 +37,103 @@
                 android:id="@+id/add_expense"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Add Expense"
                 android:layout_centerHorizontal="true"
-                android:textSize="22dp"
+                android:fontFamily="@font/centabel_book"
+                android:text="Add Expense"
                 android:textColor="@color/black"
-                android:fontFamily="@font/centabel_book"/>
+                android:textSize="22dp" />
 
             <TextView
                 android:id="@+id/ttl_expense"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="30dp"
-                android:textColor="@color/black"
                 android:layout_below="@id/add_expense"
-                android:text="Title:"/>
+                android:layout_marginTop="30dp"
+                android:text="Title:"
+                android:textColor="@color/black" />
 
             <EditText
                 android:id="@+id/title_expense"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_toRightOf="@id/ttl_expense"
-                android:layout_marginTop="10dp"
                 android:layout_below="@id/add_expense"
                 android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/ttl_expense"
+                android:inputType="textCapSentences"
                 android:textColor="@color/black"
-                android:textColorHighlight="@color/app_theme"
-                android:inputType="textCapSentences"/>
+                android:textColorHighlight="@color/app_theme" />
 
             <TextView
                 android:id="@+id/note"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/ttl_expense"
-                android:textColor="@color/black"
+                android:layout_marginTop="30dp"
                 android:text="Note:"
-                android:layout_marginTop="30dp"/>
+                android:textColor="@color/black" />
 
             <EditText
                 android:id="@+id/note_expense"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/title_expense"
-                android:layout_toRightOf="@id/note"
-                android:layout_marginTop="10dp"
                 android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/note"
+                android:inputType="text"
                 android:textColor="@color/black"
-                android:textColorHighlight="@color/app_theme"
-                android:inputType="text"/>
+                android:textColorHighlight="@color/app_theme" />
 
             <TextView
                 android:id="@+id/category"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/note"
+                android:layout_marginTop="30dp"
                 android:text="Category:"
-                android:textColor="@color/black"
-                android:layout_marginTop="30dp"/>
+                android:textColor="@color/black" />
 
             <Spinner
                 android:id="@+id/category_spinner"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_toRightOf="@id/category"
                 android:layout_below="@id/note_expense"
+                android:layout_marginLeft="10dp"
                 android:layout_marginTop="10dp"
-                android:layout_marginLeft="10dp"/>
+                android:layout_toRightOf="@id/category" />
 
             <TextView
                 android:id="@+id/amount"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Amount:"
                 android:layout_below="@id/category"
-                android:textColor="@color/black"
-                android:layout_marginTop="30dp"/>
+                android:layout_marginTop="30dp"
+                android:text="Amount:"
+                android:textColor="@color/black" />
 
             <EditText
                 android:id="@+id/expense_amt"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/category_spinner"
-                android:layout_toRightOf="@id/amount"
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/amount"
+                android:inputType="numberDecimal"
                 android:textColor="@color/black"
-                android:textColorHighlight="@color/app_theme"
-                android:inputType="numberDecimal"/>
+                android:textColorHighlight="@color/app_theme" />
 
             <Button
                 android:id="@+id/btn_add_expense"
                 android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_below="@id/expense_amt"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="40dp"
-                android:layout_height="wrap_content"
-                android:textColor="@color/black"
                 android:backgroundTint="@color/app_theme"
-                android:text="Add Expense"/>
+                android:text="Add Expense"
+                android:textColor="@color/white" />
 
         </RelativeLayout>
 

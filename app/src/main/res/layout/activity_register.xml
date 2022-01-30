@@ -7,13 +7,13 @@
     tools:context=".LoginActivity">
 
     <ImageView
+        android:id="@+id/logo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/logo"
+        android:layout_centerHorizontal="true"
         android:layout_marginTop="100dp"
-        android:src="@drawable/logo"
-        app:tint="@color/app_theme"
-        android:layout_centerHorizontal="true"/>
+        android:src="@drawable/logo_1"
+         />
 
     <TextView
         android:id="@+id/register"
@@ -32,54 +32,53 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/register"
+        android:layout_centerHorizontal="true"
         android:layout_marginHorizontal="10dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="41dp"
         android:hint="Enter Email"
-        android:inputType="textEmailAddress"
-        android:textColorHint="@color/app_theme" />
+        android:inputType="textEmailAddress" />
 
     <EditText
         android:id="@+id/password"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/email"
-        android:layout_marginTop="10dp"
+        android:layout_centerInParent="true"
         android:layout_marginHorizontal="10dp"
-        android:textColorHint="@color/app_theme"
+        android:layout_marginTop="14dp"
         android:hint="Enter Password of 8 characters in length"
-
-        android:inputType="textPassword"/>
+        android:inputType="textPassword" />
 
     <Button
         android:id="@+id/registerBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/password"
-        android:layout_marginTop="30dp"
-        android:backgroundTint="@color/app_theme"
-        android:textColor="@color/black"
         android:layout_centerHorizontal="true"
-        android:text="Register"/>
+        android:layout_marginTop="45dp"
+        android:backgroundTint="@color/app_theme"
+        android:text="Register"
+        android:textColor="@color/white" />
 
     <TextView
         android:id="@+id/loginTxtView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:layout_marginLeft="100dp"
         android:layout_below="@id/registerBtn"
-        android:text="Already registered?"/>
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="53dp"
+        android:text="Already registered?" />
 
     <TextView
         android:id="@+id/login_"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Sign In"
-        android:textColor="@color/app_theme"
         android:layout_below="@id/registerBtn"
-        android:layout_marginTop="10dp"
         android:layout_marginLeft="10dp"
+        android:layout_marginTop="53dp"
         android:layout_toRightOf="@id/loginTxtView"
-        android:onClick="Login"/>
+        android:onClick="Login"
+        android:text="Sign In"
+        android:textColor="@color/app_theme" />
 
 </RelativeLayout>

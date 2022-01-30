@@ -21,10 +21,11 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/tool_bar"
-        android:layout_marginTop="40dp"
-        app:cardElevation="10dp"
+        android:layout_centerInParent="true"
         android:layout_marginHorizontal="10dp"
-        app:cardCornerRadius="10dp">
+        android:layout_marginTop="214dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="10dp">
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -35,18 +36,18 @@
                 android:id="@+id/add_cat"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Edit Category"
                 android:layout_centerHorizontal="true"
-                android:textSize="22dp"
-                android:fontFamily="@font/centabel_book"/>
+                android:fontFamily="@font/centabel_book"
+                android:text="Edit Category"
+                android:textSize="22dp" />
 
             <TextView
                 android:id="@+id/cat_name"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Category Name:"
                 android:layout_below="@id/add_cat"
-                android:layout_marginTop="30dp"/>
+                android:layout_marginTop="30dp"
+                android:text="Category Name:" />
 
             <EditText
                 android:id="@+id/input_category"
@@ -55,17 +56,17 @@
                 android:layout_below="@id/add_cat"
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="10dp"
-                android:inputType="textCapSentences"
-                android:layout_toRightOf="@id/cat_name" />
+                android:layout_toRightOf="@id/cat_name"
+                android:inputType="textCapSentences" />
 
             <Button
                 android:id="@+id/btn_add_category"
                 android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_below="@id/input_category"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="40dp"
-                android:layout_height="wrap_content"
-                android:text="Edit Category"/>
+                android:text="Edit Category" />
 
         </RelativeLayout>
 

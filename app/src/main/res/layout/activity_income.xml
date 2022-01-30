@@ -7,19 +7,21 @@
     tools:context=".IncomeActivity"
     >
 
+
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/tool_bar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
+        android:layout_marginTop="0dp"
         android:background="@color/app_theme"
-        app:titleTextColor="@color/black"
-        app:title="Income"
-        app:collapseIcon="@color/black"
         android:minHeight="?attr/actionBarSize"
         android:theme="@style/ThemeOverlay.AppCompat.Dark"
-        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
-
+        app:collapseIcon="@color/white"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:title="Income"
+        app:titleTextColor="@color/white" />
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottom_nav"
@@ -27,11 +29,11 @@
         android:layout_width="match_parent"
         android:layout_height="48dp"
         android:layout_alignParentBottom="true"
-        app:itemIconTint="@color/black"
-        app:itemTextColor="@color/black"
-        app:menu="@menu/nav_bottom"
+        android:background="@color/app_theme"
         android:elevation="20dp"
-        android:background="@color/app_theme">
+        app:itemIconTint="@color/white"
+        app:itemTextColor="@color/white"
+        app:menu="@menu/nav_bottom">
 
     </com.google.android.material.bottomnavigation.BottomNavigationView>
 
@@ -46,9 +48,12 @@
         android:id="@+id/recycler_income"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@id/tool_bar"
         android:layout_above="@id/bottom_nav"
-        android:layout_marginTop="10dp"/>
+        android:layout_below="@id/tool_bar"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="1dp" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/fab_income"
@@ -56,14 +61,14 @@
         android:layout_height="wrap_content"
         android:layout_above="@id/bottom_nav"
         android:layout_alignParentRight="true"
-        android:layout_marginBottom="5dp"
-        android:layout_marginRight="5dp"
-        android:backgroundTint="@color/app_theme"
         android:layout_marginHorizontal="10dp"
         android:layout_marginVertical="10dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="5dp"
+        android:backgroundTint="@color/app_theme"
+        android:onClick="fab"
         android:src="@drawable/ic_add"
-        app:rippleColor="@color/app_theme"
-        android:onClick="fab"/>
+        app:rippleColor="@color/app_theme" />
 
 
 </RelativeLayout>

@@ -21,10 +21,11 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/tool_bar"
-        android:layout_marginTop="40dp"
-        app:cardElevation="10dp"
+        android:layout_centerInParent="true"
         android:layout_marginHorizontal="10dp"
-        app:cardCornerRadius="10dp">
+        android:layout_marginTop="212dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="10dp">
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -35,37 +36,37 @@
                 android:id="@+id/add_income"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Edit Income"
                 android:layout_centerHorizontal="true"
-                android:textSize="22dp"
-                android:fontFamily="@font/centabel_book"/>
+                android:fontFamily="@font/centabel_book"
+                android:text="Edit Income"
+                android:textSize="22dp" />
 
             <TextView
                 android:id="@+id/income_ttl"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
                 android:text="Income Name"
-                android:textSize="18dp"
-                android:layout_marginTop="20dp"/>
+                android:textSize="18dp" />
 
             <EditText
                 android:id="@+id/income_name"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_toRightOf="@id/income_ttl"
-                android:layout_toEndOf="@id/income_ttl"
                 android:layout_marginLeft="10dp"
-                android:inputType="textCapSentences"/>
+                android:layout_toEndOf="@id/income_ttl"
+                android:layout_toRightOf="@id/income_ttl"
+                android:inputType="textCapSentences" />
 
             <TextView
                 android:id="@+id/incomeAmountTtl"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Amount"
                 android:layout_below="@id/income_ttl"
                 android:layout_marginTop="30dp"
-                android:textSize="18dp"
-                android:inputType="numberDecimal"/>
+                android:inputType="numberDecimal"
+                android:text="Amount"
+                android:textSize="18dp" />
 
             <EditText
                 android:id="@+id/incomeAmount"
@@ -75,18 +76,18 @@
                 android:layout_marginStart="61dp"
                 android:layout_marginLeft="61dp"
                 android:layout_marginTop="11dp"
-                android:inputType="numberDecimal"
                 android:layout_toEndOf="@id/incomeAmountTtl"
-                android:layout_toRightOf="@id/incomeAmountTtl" />
+                android:layout_toRightOf="@id/incomeAmountTtl"
+                android:inputType="numberDecimal" />
 
             <Button
                 android:id="@+id/btn_add_income"
                 android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_below="@id/incomeAmount"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="40dp"
-                android:layout_height="wrap_content"
-                android:text="Edit Income"/>
+                android:text="Edit Income" />
 
         </RelativeLayout>
 

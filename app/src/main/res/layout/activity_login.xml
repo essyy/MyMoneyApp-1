@@ -7,49 +7,49 @@
     tools:context=".LoginActivity">
 
     <ImageView
+        android:id="@+id/logo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/logo"
+        android:layout_centerHorizontal="true"
         android:layout_marginTop="100dp"
-        android:src="@drawable/logo"
-        app:tint="@color/app_theme"
-        android:layout_centerHorizontal="true"/>
+        android:src="@drawable/logo_1"
+         />
 
     <TextView
         android:id="@+id/login"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Login"
-        android:textFontWeight="400"
-        android:textSize="30dp"
-        android:textColor="@color/black"
         android:layout_below="@id/logo"
-        android:layout_marginTop="10dp"
-        android:layout_centerHorizontal="true"/>
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="19dp"
+        android:text="Login"
+        android:textColor="@color/black"
+        android:textFontWeight="400"
+        android:textSize="30dp" />
 
     <EditText
         android:id="@+id/loginEmail"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/login"
+        android:layout_centerHorizontal="true"
         android:layout_marginHorizontal="10dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="32dp"
         android:hint="Enter Email"
         android:inputType="textEmailAddress"
-        android:minHeight="48dp"
-        android:textColorHint="@color/app_theme" />
+        android:minHeight="48dp" />
 
     <EditText
         android:id="@+id/loginPassword"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/loginEmail"
+        android:layout_centerInParent="true"
         android:layout_marginHorizontal="10dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="4dp"
         android:hint="Enter Password"
         android:inputType="textPassword"
-        android:minHeight="48dp"
-        android:textColorHint="@color/app_theme" />
+        android:minHeight="48dp" />
 
     <Button
         android:id="@+id/loginBtn"
@@ -57,28 +57,29 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/loginPassword"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="28dp"
         android:backgroundTint="@color/app_theme"
         android:text="Login"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         tools:ignore="DuplicateSpeakableTextCheck" />
 
     <TextView
         android:id="@+id/acc_signup"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:layout_marginLeft="100dp"
         android:layout_below="@id/loginBtn"
-        android:text="No Account?"/>
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="50dp"
+        android:text="No Account?" />
 
     <TextView
         android:id="@+id/signup"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/loginBtn"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="50dp"
         android:layout_toRightOf="@id/acc_signup"
         android:minHeight="48dp"
         android:onClick="Register"

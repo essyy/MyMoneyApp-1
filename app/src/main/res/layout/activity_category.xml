@@ -11,8 +11,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
-        android:background="@color/app_theme"
-        app:titleTextColor="@color/black"
+        android:background="@color/theme"
+        app:titleTextColor="@color/white"
         app:title="Categories"
         app:collapseIcon="@color/black"
         android:minHeight="?attr/actionBarSize"
@@ -25,11 +25,11 @@
         android:layout_width="match_parent"
         android:layout_height="48dp"
         android:layout_alignParentBottom="true"
-        app:itemIconTint="@color/black"
-        app:itemTextColor="@color/black"
-        app:menu="@menu/nav_bottom"
+        android:background="@color/theme"
         android:elevation="20dp"
-        android:background="@color/app_theme">
+        app:itemIconTint="@color/white"
+        app:itemTextColor="@color/white"
+        app:menu="@menu/nav_bottom">
 
     </com.google.android.material.bottomnavigation.BottomNavigationView>
 
@@ -49,11 +49,11 @@
         android:layout_alignParentRight="true"
         android:layout_marginRight="5dp"
         android:layout_marginBottom="5dp"
-        android:backgroundTint="@color/app_theme"
+        android:backgroundTint="@color/theme"
         android:onClick="fab_cat"
         android:layout_marginVertical="10dp"
         android:layout_marginHorizontal="10dp"
         android:src="@drawable/ic_add"
-        app:rippleColor="@color/app_theme" />
+        app:rippleColor="@color/theme" />
 
 </RelativeLayout>
