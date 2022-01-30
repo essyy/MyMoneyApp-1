@@ -180,7 +180,7 @@ public class DashboardActivity extends AppCompatActivity {
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_help) {
-            Intent intent = new Intent(Intent.ACTION_DIAL, Uri.parse("tel:12345678"));
+            Intent intent = new Intent(Intent.ACTION_DIAL, Uri.parse("tel:0792507221"));
             startActivity(intent);
         } else if (id == R.id.log_out) {
             mAuth.signOut();

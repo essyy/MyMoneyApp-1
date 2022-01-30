@@ -56,34 +56,39 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/add_income"
-                android:layout_toRightOf="@id/income_ttl"
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/income_ttl"
+                android:inputType="textCapSentences"
+                android:minHeight="48dp"
                 android:textColor="@color/black"
                 android:textColorHighlight="@color/app_theme"
-                android:inputType="textCapSentences"/>
+                tools:ignore="SpeakableTextPresentCheck" />
 
             <TextView
                 android:id="@+id/incomeAmountTtl"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Amount:"
                 android:layout_below="@id/income_ttl"
-                android:textColor="@color/black"
                 android:layout_marginTop="30dp"
-                android:inputType="numberDecimal"/>
+                android:inputType="numberDecimal"
+                android:minHeight="48dp"
+                android:text="Amount:"
+                android:textColor="@color/black" />
 
             <EditText
                 android:id="@+id/incomeAmount"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/income_name"
-                android:layout_marginTop="10dp"
                 android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/incomeAmountTtl"
+                android:inputType="numberDecimal"
+                android:minHeight="48dp"
                 android:textColor="@color/black"
                 android:textColorHighlight="@color/app_theme"
-                android:inputType="numberDecimal"
-                android:layout_toRightOf="@id/incomeAmountTtl" />
+                tools:ignore="SpeakableTextPresentCheck" />
 
             <Button
                 android:id="@+id/btn_add_income"
