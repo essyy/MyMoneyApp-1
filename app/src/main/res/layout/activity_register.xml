@@ -46,7 +46,8 @@
         android:layout_marginTop="10dp"
         android:layout_marginHorizontal="10dp"
         android:textColorHint="@color/app_theme"
-        android:hint="Enter Password"
+        android:hint="Enter Password of 8 characters in length"
+
         android:inputType="textPassword"/>
 
     <Button
