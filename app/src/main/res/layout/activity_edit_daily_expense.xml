@@ -26,7 +26,7 @@
         android:layout_below="@id/tool_bar"
         android:layout_centerInParent="true"
         android:layout_marginHorizontal="10dp"
-        android:layout_marginTop="142dp"
+        android:layout_marginTop="16dp"
         app:cardCornerRadius="10dp"
         app:cardElevation="10dp">
 
