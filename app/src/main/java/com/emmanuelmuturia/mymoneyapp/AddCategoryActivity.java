@@ -50,7 +50,6 @@ public class AddCategoryActivity extends AppCompatActivity {
         addCat = findViewById(R.id.input_category);
         addBtn = findViewById(R.id.btn_add_category);
 
-//        FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
 
         addBtn.setOnClickListener(new View.OnClickListener() {
             @Override
