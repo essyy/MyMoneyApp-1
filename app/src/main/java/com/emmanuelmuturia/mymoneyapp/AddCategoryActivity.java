@@ -25,7 +25,8 @@ import com.google.firebase.database.FirebaseDatabase;
 import org.jetbrains.annotations.NotNull;
 //testing
 public class AddCategoryActivity extends AppCompatActivity {
-    //declaring an EditText to hold the Category value
+
+    //We declare an EditText...
     private EditText addCat;
     private Button addBtn;
 
@@ -49,7 +50,6 @@ public class AddCategoryActivity extends AppCompatActivity {
         addCat = findViewById(R.id.input_category);
         addBtn = findViewById(R.id.btn_add_category);
 
-//        FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
 
         addBtn.setOnClickListener(new View.OnClickListener() {
             @Override
