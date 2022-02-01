@@ -24,6 +24,7 @@ import com.google.firebase.database.FirebaseDatabase;
 
 import org.jetbrains.annotations.NotNull;
 //testing
+//......
 public class AddCategoryActivity extends AppCompatActivity {
 
     //We declare an EditText...
