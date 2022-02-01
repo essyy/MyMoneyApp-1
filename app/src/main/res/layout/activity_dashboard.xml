@@ -40,7 +40,7 @@
         android:layout_below="@id/tool_bar"
         android:layout_centerHorizontal="true"
         android:layout_marginLeft="70dp"
-        android:layout_marginTop="75dp"
+        android:layout_marginTop="90dp"
         android:backgroundTint="@color/theme"
         app:cardCornerRadius="10dp"
         app:cardElevation="10dp">
@@ -81,7 +81,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginStart="-305dp"
         android:layout_marginLeft="-305dp"
-        android:layout_marginTop="169dp"
+        android:layout_marginTop="190dp"
         android:layout_marginRight="40dp"
         android:layout_toEndOf="@id/dash_income"
         android:layout_toRightOf="@id/dash_income"
@@ -92,7 +92,10 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_margin="10dp">
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp">
 
             <TextView
                 android:id="@+id/bal"
@@ -123,8 +126,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/dash_income"
-        android:layout_centerInParent="true"
-        android:layout_marginTop="199dp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="350dp"
+        android:layout_marginEnd="170dp"
         android:fontFamily="@font/centabel_book"
         android:text="Expenses"
         android:textColor="@color/black"
@@ -137,7 +142,10 @@
         android:layout_height="40sp"
         android:layout_below="@+id/expense_title"
         android:layout_alignParentStart="true"
-        android:layout_marginTop="201dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="-550dp"
+        android:layout_marginEnd="1dp"
         android:background="@color/white"
         android:minHeight="20sp"
         android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
@@ -146,13 +154,15 @@
 
     <androidx.viewpager.widget.ViewPager
         android:id="@+id/view_pager"
-        android:layout_width="match_parent"
-        android:layout_height="246dp"
+        android:layout_width="wrap_content"
+        android:layout_height="256dp"
         android:layout_above="@id/bottom_nav"
         android:layout_below="@id/tab_layout"
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
-        android:layout_marginTop="203dp"
-        android:layout_marginBottom="-1dp" />
+        android:layout_marginStart="1dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="301dp"
+        android:layout_marginBottom="5dp" />
 
 </RelativeLayout>
