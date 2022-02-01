@@ -102,6 +102,7 @@ public class LoginActivity extends AppCompatActivity {
         });
     }
 
+    //Intent to take unregistered users to the Register Activity...
     public void Register(View view) {
         Intent intent = new Intent(LoginActivity.this, RegisterActivity.class);
         startActivity(intent);
