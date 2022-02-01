@@ -15,18 +15,18 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
 public class SplashActivity extends AppCompatActivity {
-    //declare a variable to hold the currently authenticated user
+    //We declare a variable to hold the currently authenticated user
     private FirebaseAuth mAuth;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
-        //get currently logged in user
+        //We get currently logged in user
         mAuth = FirebaseAuth.getInstance();
         registerUser();
 
-//      Transition from Splash Activity to Main Activity
+        //Transition from Splash Activity to Main Activity
         final Intent intent = new Intent(SplashActivity.this, DashboardActivity.class);
         new Handler().postDelayed(new Runnable() {
             @Override

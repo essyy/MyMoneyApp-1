@@ -70,7 +70,7 @@ public class LoginActivity extends AppCompatActivity {
                         }
                     });
                 } else {
-                    //If email and pwd fields were not completed
+                    //If email and pwd fields were not completed...
                     Toast.makeText(LoginActivity.this, "Complete all fields", Toast.LENGTH_SHORT).show();
                 }
             }
@@ -79,9 +79,9 @@ public class LoginActivity extends AppCompatActivity {
 
     //Function to check if user exists...
     public void checkUserExistence() {
-        //check user existence of user using the user_id in users db reference...
+        //We check user existence of user using the user_id in users db reference...
         final String user_id = mAuth.getCurrentUser().getUid();
-        //call the method addValueEventListener on the db reference of the user to determine if the current userID supplied does exist in our db reference...
+        //We call the method addValueEventListener on the db reference of the user to determine if the current userID supplied does exist in our db reference...
         mDatabaseUsers.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
